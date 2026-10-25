@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>أحمد الهوى | التغذية واللياقة البدنية</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header / Navbar -->
+    <header class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <i class="fa-solid fa-apple-whole icon-logo"></i>
+                <span>أحمد الهوى</span>
+            </a>
+            <nav class="nav-links">
+                <a href="#hero">الرئيسية</a>
+                <a href="#services">خدماتي</a>
+                <a href="#calculator">حاسبة السعرات</a>
+                <a href="#pdfs">الملفات والكتب</a>
+                <a href="https://wa.me/+963983958105?text=مرحباً%20أحمد،%20أريد%20الاستفسار%20عن%20طلب%20جدول%20غذائي" target="_blank" class="btn-nav">اطلب جدولك</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="container hero-content">
+            <span class="badge">أخصائي تغذية ومدرب رياضي</span>
+            <h1>ابنِ جسدك الصحي واستعد طاقتك بكل توازن</h1>
+            <p>أنظمة غذائية وتمارين مصممة خصيصاً لتناسب أسلوب حياتك وأهدافك البدنية بدون حرمان.</p>
+            <div class="hero-btns">
+                <a href="https://wa.me/+963983958105?text=مرحباً%20أحمد،%20أريد%20الاستفسار%20عن%20طلب%20جدول%20غذائي" target="_blank" class="btn btn-primary">
+                    <i class="fa-brands fa-whatsapp"></i> اطلب جدولك الآن
+                </a>
+                <a href="#services" class="btn btn-secondary">استكشف الخدمات</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title">الخدمات المتاحة</h2>
+            <div class="cards-grid">
+                
+                <div class="card">
+                    <div class="card-icon"><i class="fa-solid fa-utensils"></i></div>
+                    <h3>جدول غذائي مخصص</h3>
+                    <p>برنامج غذائي يستهدف بناء العضلات أو خسارة الدهون بناءً على قياساتك وفحوصاتك.</p>
+                    <a href="https://wa.me/+963983958105?text=أريد%20طلب%20خدمة:%20جدول%20غذائي%20مخصص" class="card-link">طلب الخدمة <i class="fa-solid fa-arrow-left"></i></a>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon"><i class="fa-solid fa-dumbbell"></i></div>
+                    <h3>جدول تمارين رياضية</h3>
+                    <p>خطة تدريبية للمنزل أو الجيم تناسب مستواك الرياضي والأدوات المتاحة لديك.</p>
+                    <a href="https://wa.me/+963983958105?text=أريد%20طلب%20خدمة:%20جدول%20تمارين%20رياضية" class="card-link">طلب الخدمة <i class="fa-solid fa-arrow-left"></i></a>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon"><i class="fa-solid fa-heart-pulse"></i></div>
+                    <h3>متابعة وتدريب شامل</h3>
+                    <p>متابعة أسبوعية وتعديل ومصاحبة مستمرة للوصول لنتائج ممتازة وصحية.</p>
+                    <a href="https://wa.me/+963983958105?text=أريد%20طلب%20خدمة:%20المتابعة%20والتدريب%20الشامل" class="card-link">طلب الخدمة <i class="fa-solid fa-arrow-left"></i></a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Calorie Calculator Section -->
+    <section id="calculator" class="calculator-section">
+        <div class="container">
+            <h2 class="section-title">حاسبة السعرات الحرارية والاحتياج اليومي</h2>
+            <p class="section-subtitle">احسب السعرات الدقيقة لجسمك بناءً على معدل الأيض ومستوى نشاطك البدني.</p>
+            
+            <div class="calculator-card">
+                <form id="bmrForm">
+                    <!-- مستوى النشاط البدني فوق خيار الجنس -->
+                    <div class="form-group">
+                        <label for="activity">مستوى النشاط البدني:</label>
+                        <select id="activity" required>
+                            <option value="1.0">سعرات الحالة السكونية: بدون أي نشاط مطلقاً</option>
+                            <option value="1.2">خامل: قليل الحركة أو دون تمارين</option>
+                            <option value="1.375">نشاط خفيف: تمارين خفيفة من يوم إلى 3 أيام أسبوعياً</option>
+                            <option value="1.55">نشاط متوسط: تمارين من 3 إلى 5 أيام أسبوعياً</option>
+                            <option value="1.725">نشاط مرتفع: تمارين قوية من 6 إلى 7 أيام أسبوعياً</option>
+                            <option value="1.9">نشاط مرتفع جداً: تمارين شديدة جداً أو عمل بدني شاق</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="gender">الجنس:</label>
+                        <select id="gender" required>
+                            <option value="male">ذكر</option>
+                            <option value="female">أنثى</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="weight">الوزن (كغ):</label>
+                        <input type="number" id="weight" placeholder="مثال: 75" step="0.1" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="height">الطول (سم):</label>
+                        <input type="number" id="height" placeholder="مثال: 175" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="age">العمر (سنوات):</label>
+                        <input type="number" id="age" placeholder="مثال: 25" required>
+                    </div>
+
+                    <button type="button" onclick="calculateCalories()" class="btn btn-primary calc-btn">احسب السعرات الحرارية</button>
+                </form>
+
+                <div id="resultBox" class="result-box" style="display: none;">
+                    <h3>نتيجتك الدقيقة:</h3>
+                    <p>إجمالي سعراتك الحرارية المطلوبة بناءً على نشاطك اليومي:</p>
+                    <div id="caloriesResult" class="calories-number">0</div>
+                    <span>سعرة حرارية / يومياً</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PDF & Download Section -->
+    <section id="pdfs" class="pdfs-section">
+        <div class="container">
+            <h2 class="section-title">كتب ودلائل PDF مجانية ومفيدة</h2>
+            <div class="cards-grid">
+
+                <div class="pdf-card">
+                    <i class="fa-solid fa-file-pdf pdf-icon"></i>
+                    <h3>دليل التغذية العلاجية للبدناء</h3>
+                    <p>كتيب يحتوي على أساسيات حساب السعرات والماكروز بطريقة بسيطة.</p>
+                    <a href="pdfs/Guide_to_Therapeutic_Nutrition.pdf" class="btn btn-outline" download>تحميل PDF <i class="fa-solid fa-download"></i></a>
+                </div>
+
+                <div class="pdf-card">
+                    <i class="fa-solid fa-file-pdf pdf-icon"></i>
+                    <h3>دليل جهاز الانبدي</h3>
+                    <p>شرح مفصل لكيفية قراءة وتحليل تقارير نسبة الدهون والعضلات والماء في الجسم.</p>
+                    <a href="pdfs/Guide_to_an_intrabody_device.pdf" class="btn btn-outline" download>تحميل PDF <i class="fa-solid fa-download"></i></a>
+                </div>
+                
+                <div class="pdf-card">
+                    <i class="fa-solid fa-file-pdf pdf-icon"></i>
+                    <h3>التغذية العلاجية لمرضى الكلى</h3>
+                    <p>دليل شامل للأنظمة الغذائية المناسبة لمرضى الكلى للحفاظ على وظائف الكلى والحد من المضاعفات.</p>
+                    <a href="pdfs/Treatment_of_kidney_patients.pdf" class="btn btn-outline" download>تحميل PDF <i class="fa-solid fa-download"></i></a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-content">
+            <p>جميع الحقوق محفوظة © 2026 - **أحمد الهوى**</p>
+            <a href="https://wa.me/+963983958105" target="_blank" class="wa-footer">
+                <i class="fa-brands fa-whatsapp"></i> تواصل معي عبر واتساب
+            </a>
+        </div>
+    </footer>
+
+    <!-- Calculator JavaScript Script -->
+    <script>
+        function calculateCalories() {
+            const gender = document.getElementById('gender').value;
+            const weight = parseFloat(document.getElementById('weight').value);
+            const height = parseFloat(document.getElementById('height').value);
+            const age = parseInt(document.getElementById('age').value);
+            const activityMultiplier = parseFloat(document.getElementById('activity').value);
+
+            if (!weight || !height || !age) {
+                alert('يرجى تعبئة جميع الحقول بشكل صحيح.');
+                return;
+            }
+
+            let bmr = 0;
+            // معادلة Mifflin-St Jeor العالمية الدقيقة لحساب السعرات في حالة السكون التام
+            if (gender === 'male') {
+                bmr = (10 * weight) + (6.25 * height) - (5 * age) + 5;
+            } else {
+                bmr = (10 * weight) + (6.25 * height) - (5 * age) - 161;
+            }
+
+            // ضرب سعرات السكون بمعامل النشاط البدني المختار
+            const totalCalories = bmr * activityMultiplier;
+
+            document.getElementById('caloriesResult').innerText = Math.round(totalCalories);
+            document.getElementById('resultBox').style.display = 'block';
+        }
+    </script>
+</body>
+</html>
